@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo h1 {
+      font-size: 1.5rem;
+      color: #ff3f6c;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #282c3f;
+      font-weight: bold;
+    }
+
+    .user-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .user-actions a {
+      text-decoration: none;
+      color: #282c3f;
+      font-weight: bold;
+    }
+
+    /* Bag Section */
+    .bag {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .bag h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #ff3f6c;
+    }
+
+    .bag-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .bag-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .bag-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .bag-item-details {
+      flex: 1;
+    }
+
+    .bag-item-details h3 {
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .bag-item-details p {
+      margin: 0.25rem 0;
+      color: #555;
+    }
+
+    .bag-item-details .price {
+      color: #ff3f6c;
+      font-weight: bold;
+    }
+
+    .bag-item-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .bag-item-actions button {
+      background: #ff3f6c;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .bag-item-actions button:hover {
+      background: #e63a5f;
+    }
+
+    .bag-summary {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+
+    .bag-summary h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .bag-summary p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+
+    .bag-summary .total {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ff3f6c;
+    }
+
+    .checkout-btn {
+      background: #ff3f6c;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .checkout-btn:hover {
+      background: #e63a5f;
+    }
+
+    /* Footer */
+    footer {
+      background: #2a2a2a;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+
+    .footer-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-section ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>FUNNKY</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="ECOMMERCE.HTML">Home</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="Wishlist.html">Wishlist</a>
+      <a href="BAG.HTML">Bag</a>
+    </div>
+  </header>
+
+  <!-- Bag Section -->
+  <section class="bag">
+    <h2>Your Bag</h2>
+    <div class="bag-items">
+      <!-- Bag Item 1 -->
+      <div class="bag-item">
+        <img src="WOMEN3.jpg" alt="Product 1">
+        <div class="bag-item-details">
+          <h3>Women's Dress</h3>
+          <p>Size: M</p>
+          <p>Color: Red</p>
+          <p class="price">350</p>
+        </div>
+        <div class="bag-item-actions">
+          <button>Remove</button>
+          <button>Move to Wishlist</button>
+        </div>
+      </div>
+
+      <!-- Bag Item 2 -->
+      <div class="bag-item">
+        <img src="M9.avif" alt="Product 2">
+        <div class="bag-item-details">
+          <h3>Men's Shirt</h3>
+          <p>Size: L</p>
+          <p>Color: Blue</p>
+          <p class="price">750</p>
+        </div>
+        <div class="bag-item-actions">
+          <button>Remove</button>
+          <button>Move to Wishlist</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bag Summary -->
+    <div class="bag-summary">
+      <h3>Order Summary</h3>
+      <p>Subtotal: 1100</p>
+      <p>Shipping: Free</p>
+      <p class="total">Total: 1100</p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>Online Shopping</h3>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Home & Living</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="CONTACT.HTML">Contact Us</a></li>
+          <li><a href="FAQ.HTML">FAQ</a></li>
+          <li><a href="term.html">Terms of Use</a></li>
+        </ul>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 FUNNKY Clone. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

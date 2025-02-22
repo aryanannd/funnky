@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo h1 {
+      font-size: 1.5rem;
+      color: #ff3f6c;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #282c3f;
+      font-weight: bold;
+    }
+
+    .user-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .user-actions a {
+      text-decoration: none;
+      color: #282c3f;
+      font-weight: bold;
+    }
+
+    /* Profile Section */
+    .profile {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .profile-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-header .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .profile-header h2 {
+      font-size: 1.8rem;
+      margin: 0.5rem 0;
+    }
+
+    .profile-header p {
+      color: #777;
+    }
+
+    .profile-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .detail-card {
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background: #f9f9f9;
+    }
+
+    .detail-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #ff3f6c;
+    }
+
+    .detail-card p {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+
+    .detail-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .detail-card ul li {
+      margin: 0.5rem 0;
+      color: #555;
+    }
+
+    .detail-card button {
+      background: #ff3f6c;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .detail-card button:hover {
+      background: #e63a5f;
+    }
+
+    /* Footer */
+    footer {
+      background: #2a2a2a;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+
+    .footer-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-section ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>FUNNKY</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="Profile.html">PROFIE</a></li>
+          <li><a href="ECOMMERCE.HTML".html">HOME</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="#">Wishlist</a>
+      <a href="#">Bag</a>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <div class="profile-header">
+      <img src="PROFILE.jpg" alt="User Avatar" class="avatar">
+      <h2>ARYAN ANAND</h2>
+      <p>ARYANANND@GMAIL.com</p>
+    </div>
+
+    <div class="profile-details">
+      <!-- Personal Information -->
+      <div class="detail-card">
+        <h3>Personal Information</h3>
+        <p><strong>Name:</strong> ARYAN ANAND</p>
+        <p><strong>Email:</strong> ARYANANND@GMAIL.com</p>
+        <p><strong>Phone:</strong> 91+ 7979994796</p>
+        <p><strong>Address:</strong> SARDAR-C, LIMDA, VARODRA GUJRAT</p>
+        <button>Edit Profile</button>
+      </div>
+
+      <!-- Order History -->
+      <div class="detail-card">
+        <h3>Order History</h3>
+        <ul>
+          <li>Order #12345 - Delivered</li>
+          <li>Order #67890 - In Transit</li>
+          <li>Order #11223 - Cancelled</li>
+        </ul>
+        <button>View All Orders</button>
+      </div>
+
+      <!-- Preferences -->
+      <div class="detail-card">
+        <h3>Preferences</h3>
+        <p><strong>Preferred Categories:</strong> Men,SHOES</p>
+        <p><strong>Newsletter Subscription:</strong> Subscribed</p>
+        <button>Edit Preferences</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>Online Shopping</h3>
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="Profile.html">PROFIE</a></li>
+          <li><a href="ECOMMERCE.HTML".html">HOME</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="CONTACT.HTML">Contact Us</a></li>
+          <li><a href="FAQ.HTML">FAQ</a></li>
+          <li><a href="term.html">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 FUNNKY Clone. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
